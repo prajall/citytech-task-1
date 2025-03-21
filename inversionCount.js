@@ -4,13 +4,13 @@ function countInversions(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] > arr[j]) {
-        invCount++;
+        inversionCount++;
       }
     }
   }
 
-  return invCount;
+  return inversionCount;
 }
 
-const arr = [8, 4, 2, 1];
+const arr = [8, 4, 5, 1];
 console.log("Total Inversions:", countInversions(arr));
